@@ -14,42 +14,57 @@
   #    /___/\__,_/ |___/\___/ /____/  /_.___/\__, /\__/\___/____/  
   #                                         /____/</pre>
   </header>
-  <nav class="site-directory">
+  <aside class="site-sidebar">
     <h2 aria-label="Site Directory" class="camel-case-header">site_directory</h2>
-    <ul>
-      <li>
-        <a href="./index.html">home</a>
-        <ul>
-          <li><a href="#featured">featured_album</a></li>
-          <li><a href="#about">about_me</a></li>
-          <li><a href="#contact">contact_info</a></li>
-          <li><a href="#favorites">favorite_things</a></li>
-        </ul>
-      </li>
-      <li><a href="./blog">blog</a></li>
-      <li><a href="./scraps">scraps</a></li>
-      <li><a href="./archive">archive</a></li>
-      <li><a href="./mirrors">mirrors</a></li>
-    </ul>
-    <a class="netbsd-link" href="https://netbsd.org" target="_blank"><img src="./images/kairilogo-small.png" alt="Powered by NetBSD"></a>
-  </nav>
+    <nav class="site-directory">
+      <ul>
+        <li>
+          <a href="./index.html">home</a>
+          <ul>
+            <li><a href="#featured-album">featured_album</a></li>
+            <li><a href="#about">about_me</a></li>
+            <li><a href="#contact">contact_info</a></li>
+            <li><a href="#favorites">favorite_things</a></li>
+          </ul>
+        </li>
+        <li><a href="./blog">blog</a></li>
+        <li><a href="./scraps">scraps</a></li>
+        <li><a href="./archive">archive</a></li>
+        <li><a href="./mirrors">mirrors</a></li>
+      </ul>
+    </nav>
+    <div class="badges">
+      <a href="https://emulation.gametechwiki.com" target="_blank">
+        <img src="./images/badges/emulate-now.webp"/>
+      </a>
+      <a href="">
+        <img src="./images/badges/proudly-zero-javascript.webp" target="_blank"/>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Personal_computer" target="_blank">
+        <img src="./images/badges/best-viewed-with-a-computer.webp"/>
+      </a>
+      <a href="https://https://github.com/gorhill/uBlock" target="_blank">
+        <img src="./images/badges/ublock-origin-now.webp"/>
+      </a>
+    </div>
+  </aside>
   <main class="site-content">
     <div class="slogan-wrapper"> 
       <h2 class="slogan"><i>Contains 7.47647791266e-8% of the internet in every page! Made with 100% all-organic* intelligence!</i></h2>
       <small class="slogan-disclaimer">*may contain microplastics</small>
     </div>
     <hr/>
-    <section>
-      <h2 aria-label="Featured Album" id="featured" class="camel-case-header">featured_album</h2>
+    <section id="featured-album">
+      <h2 aria-label="Featured Album"  class="camel-case-header">featured_album</h2>
       <div class="section-body">
         <div class="featured-album">
           <img class="featured-album-cover" src="./images/album-covers/500x500_plastic-death.webp"/>
-          <div class="featured-album-details">
-            <h3 class="featured-album-title">plastic death</h3>
+          <aside class="featured-album-details">
+            <h3 class="featured-album-title"><i>plastic death</i></h3>
             <h4 class="featured-album-artist">glass beach</h4>
             <p class=featured-album-writeup>The album <cite>plastic death</cite> is kind of hard to nail down genre-wise. It has some elements from psych rock, emo, thrash metal, and even more. What I found especially unique about this album is that every song has it's own unique soundscape but collectively the songs all fit under a general vibe in a way that's hard to describe. I'm a big fan of the track "cul-de-sac" which I feel really captures the feeling invoked from the album's awesome album art.</p>
             <p class="featured-album-favorite-track">Favorite Track: "cul-de-sac"</p>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
@@ -72,7 +87,7 @@
       <div class="section-body"
         <p>Here's a list of some of my favorite things, with no particular theme:</p>
         <ul>
-          <li><b>Linux Distro:</b> Void <i>or</i> OpenSUSE Tumbleweed</li>
+          <li><b>Linux Distro:</b> Void <em>or</em> OpenSUSE Tumbleweed</li>
           <li><b>Font:</b> Mononoki</li>
           <li><b>Text Editor:</b> Helix</li>
           <li><b>Album</b>: <i>Hope</i> (1977) by Klaatu</li>
