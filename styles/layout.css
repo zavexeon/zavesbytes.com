@@ -1,0 +1,64 @@
+/* SPDX-License-Identifier: 0BSD */
+
+html, body {
+  margin: 0;
+}
+
+.site-container {
+  width: 100%;
+  height: 100dvh;
+
+  display: grid;
+  grid-template-areas:
+    "site-header site-header"
+    "site-navbar site-content"
+    "site-footer site-footer";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  gap: 1.5px;
+}
+
+.site-header {
+  grid-area: site-header;
+  padding: 0px 2px 0px 2px;
+}
+
+.site-navbar {
+  grid-area: site-navbar;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+}
+
+.site-navbar__links {
+  margin: 0;
+}
+
+.site-navbar__web-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.site-content {
+  overflow: auto;
+  grid-area: site-content;
+
+  padding: 10px;
+}
+
+.site-footer {
+  grid-area: site-footer;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 2px;
+}
+
+
+
+
