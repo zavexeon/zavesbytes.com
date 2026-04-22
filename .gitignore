@@ -1,2 +1,6 @@
-images/
-fonts/
+package.json
+package-lock.json
+node_modules/
+
+_site/
+src/assets/images/
