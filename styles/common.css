@@ -38,4 +38,11 @@
   background: #fff;
 }
 
+.site-header__home-link {
+  font-family: var(--font-monospace);
+  font-family: monospace;
+  text-decoration: none;    
+  color: #ccc;
+}
+
 
