@@ -1,12 +1,17 @@
+{# SPDX-License-Identifier: 0BSD #}
 <!DOCTYPE html>
-<!-- SPDX-License-Identifier: 0BSD -->
 <html>
 <head>
   <title>{{ title }}</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/assets/css/layout.css">
   <link rel="stylesheet" href="/assets/css/common.css">
-  <link rel="stylesheet" href="/assets/css/index.css">
+
+  {% if stylesheets %}
+    {% for stylesheet in stylesheets %}
+      <link rel="stylesheet" href="{{ stylesheet }}">
+    {% endfor %}
+  {% endif %}
 </head>
 <body class="site-container">
   <header class="site-header">
@@ -22,11 +27,14 @@
 #                                         /____/</pre>
     </a>
   </header>
+
   {% include "navbar.njk" %}
+
   <main class="site-content">
     {{ content | safe }}
   </main>
+
   {% include "footer.njk" %}
+
 </body>
 </html>
-

@@ -1,5 +1,4 @@
 /* SPDX-License-Identifier: 0BSD */
-
 html, body {
   margin: 0;
 }
@@ -15,13 +14,10 @@ html, body {
     "site-footer site-footer";
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr auto;
-
-  gap: 1.5px;
 }
 
 .site-header {
   grid-area: site-header;
-  padding: 0px 2px 0px 2px;
 }
 
 .site-navbar {
@@ -30,12 +26,6 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 10px;
-}
-
-.site-navbar__links {
-  margin: 0;
 }
 
 .site-navbar__web-badges {
@@ -43,22 +33,12 @@ html, body {
   grid-template-columns: 1fr 1fr;
 }
 
+
 .site-content {
   overflow: auto;
   grid-area: site-content;
-
-  padding: 10px;
 }
 
 .site-footer {
   grid-area: site-footer;
-
-  display: flex;
-  justify-content: center;
-
-  padding: 2px;
 }
-
-
-
-

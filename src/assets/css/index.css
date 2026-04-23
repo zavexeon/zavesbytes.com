@@ -1,0 +1,50 @@
+/* SPDX-License-Identifier: 0BSD */
+.slogan {
+  display: inline-grid;
+  justify-items: start;
+}
+
+.slogan__main {
+  font-family: serif;
+  font-size: 1.45em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.slogan__disclaimer {
+  font-size: 0.65em;
+  font-style: normal;
+  font-weight: normal;
+  justify-self: end;
+}
+
+.featured-album {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.featured-album__cover {
+  max-height: 200px;
+  box-shadow: 1px 1px 6px #222;
+}
+
+.featured-album__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-album__details * {
+  margin: 0;
+}
+
+.featured-album__writeup {
+  margin: auto 0 auto 0;
+}
+
+.song-lyrics__quote {
+  line-height: 1;
+  font-style: italic;
+  font-family: var(--default-serif);
+  font-family: serif;
+}

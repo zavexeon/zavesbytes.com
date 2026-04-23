@@ -1,7 +1,86 @@
 ---
 layout: layouts/base.njk
 title: zave's bytes ~/
----
-<h1 class="visually-hidden">zave's bytes homepage</h1>
-<h2>Contains 7.47647791266e-8% of the internet in every page!  Made with 100% all-organic* intelligence!</h2>
 
+stylesheets:
+  - /assets/css/index.css
+
+featuredAlbum:
+  name: plastic death
+  artist: glass beach
+  artistURL: https://glassbeach.band/
+  favoriteTrack: cul-de-sac
+  cover: /assets/images/album-covers/500x500_plastic-death.webp
+  writeup: "The album <i>plastic death</i> is kind of hard to nail down genre-wise. It has some elements from psych rock, emo, thrash metal, and beyond. What I found especially unique about this album is that every has it's own individual soundscape but collectively the songs all fit under a general vibe in a way that's a hard way to describe. I'm particularly a fan of the track \"cul-de-sac\" which I feel really captures the feelings invoked from the album's awesome cover art."
+---
+{# SPDX-License-Identifier: 0BSD #}
+<h1 class="visually-hidden">zave's bytes homepage</h1>
+<!-- TODO: give this a more semantic name -->
+<div class="slogan">
+  <div class="slogan__main">Contains 7.47647791266e-8% of the internet in every page! Made with 100% all-organic* intelligence!</div>
+  <div class="slogan__disclaimer">*may contain microplastics</div>
+</div>
+<hr>
+<section>
+  <h2 class="camelcase-header">featured_album</h2>
+  {% include "featured-album.njk" %}
+</section>
+<section>
+  <h2 class="camelcase-header">about_me</h2>
+  <div class="prose">
+  <p>
+    Welcome to my corner of the world wide web! I'm zave. I'm generally a computer nerd which I'll probably extensively document on here but I do have other interests as well. This site does not have a specific focus, it will primarily be a dumping grounds for things I find interesting. Some of those things are:
+  </p>
+  <ul>
+    <li>*nix, primarily Linux but I do tinker with the BSDs and proper UNIX from time to time.</li>
+    <li>Music. I'm not a musician myself but I am an avid consumer of music</li>
+    <li>Programming. Right now I'm learning embedded programming.</li>
+    <li>Many other passing interests, but most are computer-centric in some manner.</li>
+  </ul>
+  </div>
+</section>
+<section>
+  <h2 class="camelcase-header">favorite_things</h2>
+  <div class="prose">
+    <p>Here's a list of some of my favorite things, with no particular theme:</p>
+    <ul>
+      <li><b>Linux Distro:</b> Void <em>or</em> OpenSUSE Tumbleweed</li>
+      <li><b>Font:</b> <a href="https://madmalik.github.io/mononoki/">mononoki</a></li>
+      <li><b>Text Editor:</b> Helix</li>
+      <li><b>Album</b>: <i>Hope</i> (1977) by Klaatu</li>
+      <li><b>Game Console:</b> Nintendo Game Boy Pocket</li>
+      <li><b>YouTuber:</b> <a href="https://www.youtube.com/@manlybadasshero" target="_blank">ManlyBadassHero</a></li>
+      <li><b>Animal:</b> Pangolin</li>
+      <li><b>Theme Park: </b>King's Island</li>
+    </ul>
+    </div>
+</section>
+<section>
+  <h2 class="camelcase-header">contact_info</h2>
+  <div class="section-body">
+    <p>If for whatever reason you'd like to get in contact with me, here is my contact info:</p>
+    <address>
+      <dl>
+        <dt>E-Mail</dt>
+        <dd><a href="mailto:zave@zavesbytes.com">zave[at]zavesbytes.com</a></dd>
+      </dl>
+      <dl>
+        <dt>Discord</dt>
+        <dd>@zavexeon</dd>
+      </dl>
+    </address>
+  </div>
+</section>
+<hr>
+<section>
+  <div class="song-lyrics">
+    <blockquote class="song-lyrics__quote" cite="https://honoraryastronaut.bandcamp.com/album/ep-001">
+      <p>I know someone will eventually reveal</p>
+      <p>I'd been carefully constructed with glitter and confetti</p>
+      <p>But nothing at all intended to harm</p>
+      <p>The innocent ones who were bold or bored enough</p>
+      <p>To inch their way down to see what I had been up to</p>
+    </blockquote>
+    <p class="song-lyrics__credits">Honorary Astronaut, <cite>EP. 001</cite>, "Final Dream Machine"</p>
+  </div>
+</section>

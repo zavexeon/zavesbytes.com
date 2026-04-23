@@ -1,4 +1,5 @@
+// SPDX-License-Identifier: 0BSD
 module.exports = function(eleventyConfig) {
-  eleventyConfig.setInputDirectory("src");
-  eleventyConfig.addPassthroughCopy("src/**/*.css");
+  eleventyConfig.setInputDirectory("src");;
+  eleventyConfig.addPassthroughCopy("src/assets/**");
 }
