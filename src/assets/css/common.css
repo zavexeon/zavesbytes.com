@@ -87,6 +87,7 @@ body {
 }
 
 .site-navbar__web-badges img {
+  max-width: 81px;
   display: block;
 }
 
