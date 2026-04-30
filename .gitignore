@@ -16,6 +16,7 @@ content/**/*.bmp
 /public/
 /resources/_gen/
 /assets/jsconfig.json
+/assets/fonts/
 hugo_stats.json
 
 # Executable may be added to repository
