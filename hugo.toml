@@ -1,0 +1,10 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'My New Hugo Project'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true

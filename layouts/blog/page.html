@@ -1,0 +1,16 @@
+{{/* SPDX-License-Identifier: 0BSD */}}
+
+{{ define "main" }}
+  <article class="prose blog-post">
+    <header>
+      <h1>{{ .Title }}</h1>
+      <hr>
+      Published: <time>{{ .Date | time.Format ":date_medium" }}</time>
+      {{ with .Summary }}
+        <p class="blog-post__summary">{{ . }}</p>
+      {{ end }}
+    </header>
+    {{ .TableOfContents }}
+    {{ .Content }}
+  </article>
+{{ end }}

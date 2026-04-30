@@ -1,0 +1,24 @@
+/* SPDX-License-Identifier: 0BSD */
+
+.home p {
+  max-width: var(--default-prose-width);
+}
+
+.slogan {
+  display: inline-grid;
+  justify-items: start;
+}
+
+.slogan__main {
+  font-family: var(--default-font-monospace);
+  font-size: 1.45em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.slogan__disclaimer {
+  font-size: 0.65em;
+  font-style: normal;
+  font-weight: normal;
+  justify-self: end;
+}

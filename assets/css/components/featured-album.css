@@ -1,0 +1,30 @@
+/* SPDX-License-Identifier: 0BSD */
+
+.featured-album {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.featured-album__cover {
+  min-width: 150px;
+  max-width: 200px;
+  height: auto;
+  box-shadow: 1px 1px 6px #222;
+}
+
+.featured-album > aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-album__name,
+.featured-album__artist,
+.featured-album__favorite-track {
+  margin: 0;
+}
+
+.featured-album__writeup {
+  margin: auto 0;
+}

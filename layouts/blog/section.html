@@ -1,0 +1,22 @@
+{{/* SPDX-License-Identifier: 0BSD */}}
+
+{{ define "main" }}
+  <div class="prose">
+    <h1>Blog Posts</h1>
+    <hr>
+    <p>I'm not much of a writer but here's a collection of my blog posts, sorted from newest to oldest. Everything here is authored by me, zave.</p>
+    {{ with .RegularPages }}
+      {{ range .ByDate }}
+        <section class="blog-post__card">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p>Published: <time>{{ .Date | time.Format ":date_medium" }}</time></p>
+          {{ with .Summary }}
+            <p class="blog-post__summary">{{ . }}</p>
+          {{ end }}
+        </section>
+      {{ end }}
+    {{ else }}
+      <p>Nothing here yet, but I'm working on it!!</p>
+    {{ end }}
+  </div>
+{{ end }}

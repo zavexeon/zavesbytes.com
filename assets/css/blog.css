@@ -1,0 +1,17 @@
+/* SPDX-License-Identifier: 0BSD */
+
+.blog-post {
+}
+
+.blog-post__summary {
+  font-style: italic;
+}
+
+.blog-post__card .blog-post__summary {
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.blog-post img {
+  max-width: 50%;
+}

@@ -1,0 +1,17 @@
+{{/* SPDX-License-Identifier: 0BSD */}}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>zave's bytes / {{ .Title }}</title> 
+
+  {{ with resources.Get "css/main.css" | css.Build }}
+      {{ if hugo.IsDevelopment }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ else }}
+        {{ with . | fingerprint }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity}}">
+        {{ end }}
+      {{ end }}
+  {{ end }}
+</head>

@@ -1,0 +1,46 @@
+{{/* SPDX-License-Identifier: 0BSD */}}
+
+<nav class="site-navbar">
+  <h2 class="snakecase-header site-navbar__header">site_directory</h2>
+  <div class="site-navbar__divider"></div>
+  <ul class="site-navbar__links">
+    <!-- <li> and <a> opening tags are kept bundled here to prevent text nodes
+    being inserted into the DOM which adds a visual space in our output if we
+    don't run everything through a minifier first. -->
+
+    <li><a href="{{ site.Home.RelPermalink }}">home</a>
+      {{ if .IsHome }}
+        {{ .Fragments.ToHTML 2 2 false }}
+      {{ end }}
+    </li>
+    {{ range site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name | lower }}</a></li>
+    {{ end }}
+  </ul>
+  <ul class="site-navbar__web-badges">
+    <li>
+      <a href="https://www.kernel.org" target="_blank">
+        <img src="/images/badges/linux-xenia_88x31.webp"
+          alt="Linux Now! web badge with the mascot, Xenia.">
+      </a>
+    </li>
+    <li>
+      <a href="https://archive.org" target="_blank">
+        <img src="/images/badges/internet-archive_88x31.webp"
+          alt="Internet Archive web badge.">
+      </a>
+    </li>
+    <li>
+      <a href="https://en.wikipedia.org/wiki/Computer" target="_blank">
+        <img src="/images/badges/i-like-computer_88x31.webp"
+          alt="I Like Computer web badge.">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.freebsd.org" target="_blank">
+        <img src="/images/badges/powered-by-freebsd_88x31.webp"
+          alt="Powered by FreeBSD web badge.">
+      </a>
+    </li>
+  </ul>
+</nav>

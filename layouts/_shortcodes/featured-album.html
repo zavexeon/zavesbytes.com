@@ -1,0 +1,30 @@
+{{/* SPDX-License-Identifier: 0BSD */}}
+
+{{ $albums := where .Site.RegularPages "Section" "albums" }}
+{{ $latest := $albums.ByDate.Reverse | first 1 }}
+
+{{ with index $latest 0 }}
+
+	{{ $albumName := .Params.name }}
+	{{ $albumArtist := .Params.artist }}
+	{{ $favoriteTrack := .Params.favoriteTrack}}
+	
+	<div class="featured-album prose__full-bleed">
+		{{ with .Page.Resources.GetMatch "cover.*" }}
+			{{ $img := .Resize "500x webp" }}
+		  <img class="featured-album__cover"
+				src="{{ $img.RelPermalink }}"
+				alt="{{ $albumName }} album cover">
+		{{ end }}
+	  <aside>
+	    <h3 class="featured-album__name">
+				<cite>{{ $albumName }}</cite>
+			</h3>
+	    <p class="featured-album__artist">by
+				<a href="{{ .Params.artistUrl }}" target="_blank">{{ $albumArtist }}</a>
+			</p>
+	    <div class="featured-album__writeup prose">{{ .Content }}</div>
+	    <p class="featured-album__favorite-track">Favorite Track: "{{ $favoriteTrack }}"</p>
+	  </aside>
+	</div>
+{{ end }}

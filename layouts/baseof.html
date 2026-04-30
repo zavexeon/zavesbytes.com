@@ -1,0 +1,15 @@
+{{/* SPDX-License-Identifier: 0BSD */}}
+
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+<body class="site-layout">
+  {{ partial "site-header.html" . }}
+  {{ partial "site-navbar.html" . }}
+  <main class="site-content">
+    {{ block "main" . }}
+    {{ end }}
+  </main>
+  {{ partial "site-footer.html" . }}
+</body>
+</html>
